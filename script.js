@@ -1,17 +1,23 @@
-const container = document.querySelector('container')
 document.getElementById('uzenet').onclick = function () {
+  alert('Szervbusz')
+  }
+  console.log('cső')
+  console.error('nem')
+  
+  
+  document.querySelector('h2').onclick = function () {
   alert('Boldog új évet!')
-}
-console.log('cső')
-console.error('nem')
+  }
+  
+document.getElementById('dobas').onclick = function () {
+const container = document.getElementById("container");
+const cardValue = Math.floor(Math.random() * 6) + 1;
+const card = document.createElement("div");
+card.textContent = cardValue;
+container.appendChild(card);
 
-document.querySelector('h1').onclick = function () {
-  alert('Boldog új évet!')
 }
 
-document.querySelector('h2').onclick = function () {
-  alert('Boldog új évet!')
-}
 
 const uzenet = document.getElementById('uzenet')
 uzenet.style.cursor = 'pointer'
